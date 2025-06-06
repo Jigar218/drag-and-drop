@@ -7,12 +7,6 @@ document.querySelectorAll(".tools button").forEach((btn) => {
     e.dataTransfer.setData("type", btn.dataset.type);
   });
 
-  // btn.addEventListener("click", () => {
-  //   const type = btn.dataset.type;
-  //   const element = createElement(type);
-  //   canvas.appendChild(element);
-  // });
-
   if (isMobileDevice()) {
     btn.addEventListener("click", () => {
       const type = btn.dataset.type;
